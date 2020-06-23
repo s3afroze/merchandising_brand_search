@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+		<br>
+		<br>
+		<a href="https://world.openfoodfacts.org/product/5000157024671/baked-beans-in-tomato-sauce-heinz">Get barcode for any products in case you don't have one.</a>
+		<br>
+		<br>
+		Higher the preferred percentage, lower the number of product available and therefore brands. 100 is max
+		<br>
+		<br>
+
+		<form action="{{ url_for('search_ingredient_submitted') }}" method="post">
+		<label for="upc">UPC/Barcode:</label>
+		<input type="text" id="upc" name="upc">
+		<br>
+		<br>
+		<label for="propotion">Preferred percentage(%) match:</label>
+		<input type="text" id="propotion" name="propotion">
+		<br>
+		<br>
+		<label for="number_of_leads">Max number of leads :</label>
+		<input type="text" id="number_of_leads" name="number_of_leads">
+		<br>
+		<br>
+		<input type="submit" value="Submit">
+		</form>
+</body>
+</html>
+
+		

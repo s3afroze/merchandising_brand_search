@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+		<br>
+		<br>
+		<a href="https://justpaste.it/3qjvd">Advanced Search Instructions</a>
+		<br>
+		<br>
+		Recommended number of brands for fast results is less than 100.
+		<br>
+		<br>		 
+			<b>Estimated time to generate file:</b> Prefered Number of Brands * 6 seconds
+		<br>
+		<br>
+		Try searching for products/ingredients suggested on <a href="https://www.reddit.com/r/AskCulinary/comments/e0ngdi/what_are_the_next_big_food_trends_in_2020/">reddit thread</a> discussing food trends of 2020
+		<br>
+		<br>
+
+		<form action="{{ url_for('search_database_submitted') }}" method="post">
+
+		<label for="search_query">Search Query:</label>
+		<input type="text" id="search_query" name="search_query">
+		<br>
+		<br>
+		<label for="number_of_leads">Number of Brands:</label>
+		<input type="text" id="number_of_leads" name="number_of_leads">
+		<br>
+		<br>
+		<input type="submit" value="Submit">
+		</form>
+</body>
+</html>
+				 
